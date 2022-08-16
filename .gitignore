@@ -1,0 +1,7 @@
+.idea/
+__pycahe__
+# Ignore dynaconf secret files
+.secrets.*
+.pytest_cache/
+tests/.pytest_cache
+res/

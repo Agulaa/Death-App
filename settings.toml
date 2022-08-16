@@ -1,0 +1,22 @@
+[dirs]
+res = "res"
+data_root = "@jinja {{ this.dirs.res }}/data"
+raw_data = "@jinja {{ this.dirs.data_root }}/raw"
+
+[paths]
+path_logo = "ablaszak_death_app/user_interface/Logo.png"
+path_death="@jinja {{this.dirs.raw_data}}/annual-number-of-deaths-by-cause.csv"
+path_population="@jinja {{this.dirs.raw_data}}/population_since_1990.csv"
+path_index="@jinja {{this.dirs.raw_data}}/human-development-index.csv"
+path_save_death="@jinja {{ this.dirs.data_root }}/death_by_country.csv"
+path_save_population="@jinja {{ this.dirs.data_root }}/population_by_country.csv"
+path_save_index="@jinja {{ this.dirs.data_root }}/index_mean_by_country.csv"
+path_to_save_input="@jinja {{ this.dirs.data_root }}/input_dataset.csv"
+path_to_plots="@jinja {{ this.dirs.res }}/plots"
+path_to_new_index="@jinja {{this.dirs.raw_data}}/index_dataset.csv"
+path_to_new_death="@jinja {{this.dirs.raw_data}}/death_dataset.csv"
+
+[url]
+death="https://drive.google.com/file/d/1XVkvSpVpn3z6aE2Oi9bo5Jwjm1J3phUy/view?usp=sharing"
+population="https://drive.google.com/file/d/1Hnd_5HRwv5gcOFQezrZoF7ePrFTgLXM9/view?usp=sharing"
+index="https://drive.google.com/file/d/1HiXSF24TLTP58shbtpM7M6ngy5c8AEzc/view?usp=sharing"

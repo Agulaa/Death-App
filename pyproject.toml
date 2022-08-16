@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "ablaszak-death-app"
+version = "0.1.0"
+description = ""
+authors = ["agnieszka.blaszak <agnieszka.blaszak@4soft.co>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+py = "^1.11.0"
+dynaconf = "^3.1.8"
+pandas = "^1.4.2"
+numpy = "^1.22.3"
+pytest = "^7.1.1"
+streamlit = "^1.8.1"
+matplotlib = "^3.5.1"
+gdown = "^4.4.0"
+plotly = "^5.7.0"
+kaleido = "0.2.1"
+platformdirs = "^2.5.2"
+wbgapi = "^1.1.2"
+selenium = "^4.1.5"
+
+[tool.poetry.dev-dependencies]
+poethepoet = "^0.13.1"
+black = "^22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+download  =  "poetry run python ablaszak_death_app/data/download_data.py new"
+download_missing  =  "poetry run python ablaszak_death_app/data/download_data.py complete"
+all_preprocess  =  "poetry run python ablaszak_death_app/data/preprocess.py false"
+preprocess  =  "poetry run python ablaszak_death_app/data/preprocess.py true"
+check = "poetry run python ablaszak_death_app/data/new_data_pipeline.py"
