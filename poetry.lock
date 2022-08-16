@@ -643,7 +643,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "kaleido"
-version = "0.2.1.post1"
+version = "0.2.1"
 description = "Static image export for web-based visualization libraries with zero dependencies"
 category = "main"
 optional = false
@@ -1713,7 +1713,7 @@ docs = ["jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "jaraco.packaging (>=9)
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "c3dd9fae6c7d3db03e01c644c549077550e50eff87caec9404c192b9d027c856"
+content-hash = "a6189f23b7e1b25ac6cec6b3b7a2abd15b8dd1774685f3794b48d61661a064f4"
 
 [metadata.files]
 altair = [

@@ -1,7 +1,11 @@
 .idea/
-__pycahe__
+__pycache__
 # Ignore dynaconf secret files
 .secrets.*
 .pytest_cache/
 tests/.pytest_cache
+tests/__pycahe__
 res/
+death_app/plots/__pycahe__
+death_app/data/__pycahe__
+death_app/user_interface/__pycahe__
